@@ -11,7 +11,7 @@ for i=1:n
           res=res+2*f(x(1),y(1))+f(x(2),y(2))+2*f(x(3),y(3));
        %pozostale
        otherwise
-          res=res+2*sum(f(x,y));
+          res=res+2*(f(x(1),y(1))+f(x(2),y(2))+f(x(3),y(3)));
    end
    x=x+v(1);
    y=y+v(2);
