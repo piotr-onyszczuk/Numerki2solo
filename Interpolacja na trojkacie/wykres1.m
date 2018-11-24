@@ -1,10 +1,9 @@
-
 times_opt=zeros(1,n);
 times_non=zeros(1,n);
 values_opt=zeros(1,n);
 values_non=zeros(1,n);
 val=value*ones(1,n);
-beg=1;
+beg=10;
 args=beg:n;
 for i=args
     square=abs((x2-x1)*(y3-y1)-(y2-y1)*(x3-x1))/(2*i*i);
@@ -20,12 +19,16 @@ end
 
 subplot(2,2,1);
 plot(args,times_opt(args),'.',args,times_non(args),'.');
-legend('optimized','non-optimized');
+title('Czas wykonywania w zaleznosci od N');
+grid on;
+legend('wersja zoptymalizowana','bez optymalizacji');
 xlabel('N');
-ylabel('time');
+ylabel('czas');
 
 subplot(2,2,2);
-plot(args,values_opt(args),'.',args,values_non(args),'.',args,val(args),'.');
-legend('optimized','non-optimized','value');
+plot(args,val(args),args,values_opt(args),'.',args,values_non(args),'.');
+grid on;
+legend('oczekiwana wartosc','wersja zoptymalizowana','bez optymalizacji');
+title ('Obliczona wartosc calki w zale¿nosci od N');
 xlabel('N');
-ylabel('value');
+ylabel('Wartosc');
