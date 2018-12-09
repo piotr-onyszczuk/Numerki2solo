@@ -1,4 +1,10 @@
 function [A,b]= matrix(x0,f,f1,f2,f3,f4)
+%funkcja oblicza macierz Grama oraz wektor wyrazow wolnych zlozone z
+%dyskretnych iloczynow skalarnych
+%x0 - argumenty dla ktorych funkcja bedzie aproksymowana
+%f - funkcja aproksymowana
+%f1,f2,f3,f4 - funkcje z bazy
+
 A=zeros(4,4);
 b=zeros(4,1);
 

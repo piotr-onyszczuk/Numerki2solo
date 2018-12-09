@@ -1,4 +1,7 @@
 function [res1,res2] = integral_for_plot(x1,y1,x2,y2,x3,y3,n,f)
+%funkcja liczaca calki na kazdym z n^2 malych trojkatow, na ktore dzielimy
+%trojkat (x1,y1), (x2,y2), (x3,y3), zwracajaca w res1 wspolrzedne srodkow
+%ciezkosci trojkatow, a w res2 wartosci calki z funkcji f w tych trojkatach
 
 %wektor (x1->x2)/n
 v12=[(x2-x1)/n; (y2-y1)/n];

@@ -1,4 +1,7 @@
 function [res]=integral_on_row(x1,y1,x2,y2,x3,y3,v23,n,f)
+%funkcja obliczajaca calke z funkcji f w rzedzie zlozonym z n trojkatow, gdzie 
+%(x1,y1),(x2,y2), (x3,y3) jest pierwszym trojkatem w rzedzie, funkcja pomocnicza
+%do integral
 
 res=0;
 res=res+calculate_triangle(x1,y1,x2,y2,x3,y3,f);

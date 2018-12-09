@@ -1,4 +1,8 @@
 function [res1,res2]=integral_on_row_for_plot(x1,y1,x2,y2,x3,y3,v23,n,f)
+%funkcja obliczajaca calki na kazdym z n trojkatow w rzedzie, gdzie 
+%(x1,y1),(x2,y2), (x3,y3) jest pierwszym trojkatem w rzedzie, zwracajaca w 
+%res1 wspolrzedne srodkow ciezkosci trojkatow, a w res2 wartosci calki z 
+%funkcji f w tych trojkatach funkcja pomocnicza do integral_for_plot
 
 res1=[];
 res2=[];

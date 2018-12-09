@@ -1,4 +1,7 @@
 function [res]= calculate_triangle(x1,y1,x2,y2,x3,y3,f)
+%funkcja obliczajaca calke z funkcji f na trojkacie (x1,y1), (x2,y2),
+%(x3,y3), metoda rzedu 3, wykorzystywana w integral_on_row
+
 x12=(x1+x2)/2;
 y12=(y1+y2)/2;
 x23=(x2+x3)/2;

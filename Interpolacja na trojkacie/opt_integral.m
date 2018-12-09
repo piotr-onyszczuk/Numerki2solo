@@ -1,5 +1,6 @@
 function [res] = opt_integral(x1,y1,x2,y2,x3,y3,n,f)
-
+%zoptymalizowana funkcja wyliczajaca calke na trojkacie (x1,y1), (x2,y2),
+%(x3,y3) z funkcji f, dzielac trojkat na n^2 trojkatow przystajacych
 %wektor (x1->x2)/n
 v12=[(x2-x1); (y2-y1)/n];
 %wektor (x1->x3)/n

@@ -1,9 +1,8 @@
 function [values]=values(coefs,x0,f1,f2,f3,f4)
 %funkcja oblicza wartosci funkcji aproksymujacej dla zadanych argumentow
-%coefs - wspolczynniki aproksymacji
+%coe
 %x0 - argumenty w ktorych funkcja jest aproksymowana
 %f1,f2,f3,f4 - funkcje z bazy
-
 n=length(x0);
 values=zeros(n,1);
 

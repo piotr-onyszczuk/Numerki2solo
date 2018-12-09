@@ -1,4 +1,6 @@
 function [res] = calculate_row(x,y,v,n,f)
+%funkcja obliczajaca w sposob zoptymalizowany wartosci potrzebne do
+%obliczenia calki na trojkacie, pomocnicza do opt_integral
 
 res=0;
 for i=1:n
