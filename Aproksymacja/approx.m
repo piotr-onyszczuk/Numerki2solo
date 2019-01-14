@@ -6,10 +6,10 @@ f3=@(x)x.^2;
 f4=@(x)exp(x);
 
 %funkcja aproksymowana
-f=@(x)log(x);
+f=@(x)sin(x);
 
 %punkty aproksymacji
-x0=1:1:10;
+x0=1:0.1:2;
 
 %macierz Grama i wektor wyrazow wolnych
 [A,b]=matrix(x0,f,f1,f2,f3,f4);
